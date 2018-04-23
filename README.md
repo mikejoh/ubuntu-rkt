@@ -24,6 +24,6 @@ The Vagrant box are bootstrapped with the provided script, if you change anythin
 6. To stop a container:
    `sudo rkt stop <ID>`
    `systemctl stop <SERVICE>`
-7. rkt can convert Docker images on the fly and if you prefix an image location with `docker://` it will default to the Docker registry for fetching images:
+7. rkt can convert Docker images on the fly and if you prefix an image location with `docker://` it will default to the Docker Hub for fetching images:
    `sudo systemd-run --slice=machine rkt --net=host --insecure-options=image run docker://mikejoh/go-web-app`
    In this case we run the compiled Go web-app within a container.
